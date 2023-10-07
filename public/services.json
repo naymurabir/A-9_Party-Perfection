@@ -1,0 +1,146 @@
+[
+    {
+        "id": "1",
+        "title": "Weddings",
+        "thumbnail": "https://i.ibb.co/NC01DRb/Weedding.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/NC01DRb/Weedding.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/6DbP579/Weddings-2.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/G74djLz/Wedding-4.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/Ms8NDy3/Wedding-3.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/W66RMFZ/Wedding-5.jpg"
+            }
+        ],
+        "price": "$2500",
+        "description": "Create memories that last a lifetime with our exquisite wedding planning services. From elegant venues to beautiful decor, we make your dream wedding a reality."
+    },
+    {
+        "id": "2",
+        "title": "Birthday Parties",
+        "thumbnail": "https://i.ibb.co/ZHCWJGH/Birthday.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/ZHCWJGH/Birthday.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/sKvxxt9/Birthday-3.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/4p6CYdF/Birthday-4.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/m5hsxsz/Birthday-1.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/By2Wjwn/Birthday2.jpg"
+            }
+        ],
+        "price": "$2200",
+        "description": "Celebrate another trip around the sun in style. Our birthday party planning services ensure a day filled with joy, fun, and unforgettable moments."
+    },
+    {
+        "id": "3",
+        "title": "Anniversaries",
+        "thumbnail": "https://i.ibb.co/Rpy34QM/Anniversaries.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/Rpy34QM/Anniversaries.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/BrtftF7/Weddings-4.jpg "
+            },
+            {
+                "image": "https://i.ibb.co/kqtVRyq/Anniversaries-3.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/w0mNQ88/Anniversaries-1.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/6DbP579/Weddings-2.jpg"
+            }
+        ],
+        "price": "$2000",
+        "description": "Commemorate your love story with a special anniversary celebration. Our services guarantee a romantic and memorable evening for you and your partner."
+    },
+    {
+        "id": "4",
+        "title": "Engagement Parties",
+        "thumbnail": "https://i.ibb.co/m9CH8mn/Engagement.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/cc5QWQ6/Weddings.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/6DbP579/Weddings-2.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/BrtftF7/Weddings-4.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/GCc04LS/Parties.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/FYydCZd/Engagement-22.jpg"
+            }
+        ],
+        "price": "$2800",
+        "description": "Begin your journey together with a joyous engagement party. We handle all the details, so you can focus on the excitement of saying 'I do.'"
+    },
+    {
+        "id": "5",
+        "title": "Retirement Parties",
+        "thumbnail": "https://i.ibb.co/nQjrfRB/Retirement.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/nQjrfRB/Retirement.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/6DbP579/Weddings-2.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/hVnZg8Q/Engagement-01.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/6DbP579/Weddings-2.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/BrtftF7/Weddings-4.jpg"
+            }
+        ],
+        "price": "$1800",
+        "description": "Celebrate a well-deserved retirement with friends and family. Our retirement party services ensure a memorable and meaningful send-off."
+    },
+    {
+        "id": "6",
+        "title": "Baby Shower",
+        "thumbnail": "https://i.ibb.co/nCHQgw9/Baby-Shower.jpg",
+        "images": [
+            {
+                "image": "https://i.ibb.co/nCHQgw9/Baby-Shower.jpg"
+            },
+            {
+                "image": " https://i.ibb.co/j5R7RLD/Baby-4.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/xG91JSC/Baby-3.jpg "
+            },
+            {
+                "image": "https://i.ibb.co/JjhLgtT/Baby-1.jpg"
+            },
+            {
+                "image": "https://i.ibb.co/9TLhg8f/Baby-2.jpg"
+            }
+        ],
+        "price": "$1500",
+        "description": "Welcome the new bundle of joy with a heartwarming baby shower. We handle everything, so you can focus on the excitement of parenthood."
+    }
+]
