@@ -43,6 +43,7 @@ const Login = () => {
         googleLogin(googleProvider)
             .then(result => {
                 const user = result.user
+                navigate(location?.state ? location.state : '/')
                 console.log(user);
                 toast("User logged in by Google successfully.")
             })
@@ -56,6 +57,7 @@ const Login = () => {
         githubLogin(githubProvider)
             .then(result => {
                 const user = result.user
+                navigate(location?.state ? location.state : '/')
                 console.log(user);
                 toast("User logged in by Github successfully.")
             })
