@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "title": "Weddings",
         "thumbnail": "https://i.ibb.co/NC01DRb/Weedding.jpg",
         "images": [
@@ -21,10 +21,17 @@
             }
         ],
         "price": "$2500",
+        "event_types": [
+            "Beach Wedding",
+            "Destination Wedding",
+            "Rustic Barn Wedding",
+            "Garden Wedding",
+            "Vintage Wedding"
+        ],
         "description": "Create memories that last a lifetime with our exquisite wedding planning services. From elegant venues to beautiful decor, we make your dream wedding a reality."
     },
     {
-        "id": "2",
+        "id": 2,
         "title": "Birthday Parties",
         "thumbnail": "https://i.ibb.co/ZHCWJGH/Birthday.jpg",
         "images": [
@@ -38,17 +45,24 @@
                 "image": "https://i.ibb.co/4p6CYdF/Birthday-4.jpg"
             },
             {
-                "image": "https://i.ibb.co/m5hsxsz/Birthday-1.jpg"
+                "image": "https://i.ibb.co/ZHCWJGH/Birthday.jpg"
             },
             {
                 "image": "https://i.ibb.co/By2Wjwn/Birthday2.jpg"
             }
         ],
         "price": "$2200",
+        "event_types": [
+            "Themed Children's Birthday Party",
+            "Milestone Birthday Celebration",
+            "Surprise Birthday Party",
+            "Outdoor Picnic Birthday",
+            "Costume or Masquerade Birthday Party"
+        ],
         "description": "Celebrate another trip around the sun in style. Our birthday party planning services ensure a day filled with joy, fun, and unforgettable moments."
     },
     {
-        "id": "3",
+        "id": 3,
         "title": "Anniversaries",
         "thumbnail": "https://i.ibb.co/Rpy34QM/Anniversaries.jpg",
         "images": [
@@ -69,10 +83,17 @@
             }
         ],
         "price": "$2000",
+        "event_types": [
+            "Silver Anniversary",
+            "Golden Anniversary",
+            "Romantic Dinner Anniversary",
+            "Family Reunion Anniversary",
+            "Renewal of Vows Ceremony"
+        ],
         "description": "Commemorate your love story with a special anniversary celebration. Our services guarantee a romantic and memorable evening for you and your partner."
     },
     {
-        "id": "4",
+        "id": 4,
         "title": "Engagement Parties",
         "thumbnail": "https://i.ibb.co/m9CH8mn/Engagement.jpg",
         "images": [
@@ -93,10 +114,17 @@
             }
         ],
         "price": "$2800",
+        "event_types": [
+            "Cocktail Reception Engagement",
+            "Outdoor Engagement Picnic",
+            "Formal Dinner Engagement",
+            "Garden Engagement Party",
+            "Surprise Engagement Celebration"
+        ],
         "description": "Begin your journey together with a joyous engagement party. We handle all the details, so you can focus on the excitement of saying 'I do.'"
     },
     {
-        "id": "5",
+        "id": 5,
         "title": "Retirement Parties",
         "thumbnail": "https://i.ibb.co/nQjrfRB/Retirement.jpg",
         "images": [
@@ -117,10 +145,17 @@
             }
         ],
         "price": "$1800",
+        "event_types": [
+            "Retirement Farewell Luncheon",
+            "Travel-Themed Retirement Party",
+            "Office Retirement Celebration",
+            "Beach Retirement Party",
+            "Family and Friends Retirement Gathering"
+        ],
         "description": "Celebrate a well-deserved retirement with friends and family. Our retirement party services ensure a memorable and meaningful send-off."
     },
     {
-        "id": "6",
+        "id": 6,
         "title": "Baby Shower",
         "thumbnail": "https://i.ibb.co/nCHQgw9/Baby-Shower.jpg",
         "images": [
@@ -141,6 +176,13 @@
             }
         ],
         "price": "$1500",
+        "event_types": [
+            "Gender Reveal Baby Shower",
+            "Twins or Multiples Baby Shower",
+            "Co-ed Baby Shower",
+            "Tea Party Baby Shower",
+            "Baby Sprinkle"
+        ],
         "description": "Welcome the new bundle of joy with a heartwarming baby shower. We handle everything, so you can focus on the excitement of parenthood."
     }
 ]
