@@ -14,9 +14,9 @@ const ServicesHome = ({ service }) => {
 
     return (
 
-        <div className="card card-compact shadow-xl">
-            <img className='w-full h-[200px] object-cover ' src={thumbnail} alt="Event" />
-            <div className="card-body bg-[#EBF6E2]">
+        <div className="card card-compact shadow-xl p-2 bg-[#EBF6E2]">
+            <img className='w-full h-[200px] object-cover rounded-md ' src={thumbnail} alt="Event" />
+            <div className="card-body ">
                 <h2 className='text-xl font-bold text-gray-800'>{title}</h2>
                 <p className='text-sm text-gray-800'>{description}</p>
 
