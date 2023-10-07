@@ -1,17 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext)
+    const { signInUser, googleLogin, githubLogin } = useContext(AuthContext)
+
+    const googleProvider = new GoogleAuthProvider()
+    const githubProvider = new GithubAuthProvider()
+
+    const location = useLocation()
+    const navigate = useNavigate()
 
 
     const handleLogin = e => {
+        e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get('email')
         const password = form.get('password')
@@ -20,6 +28,7 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 const user = result.user
+                navigate(location?.state ? location.state : '/')
                 console.log(user);
                 toast("User logged in successfully.")
                 e.target.reset()
@@ -28,8 +37,34 @@ const Login = () => {
                 console.log("Error", error.message);
                 toast(error.message)
             })
-
     }
+
+    const handleGoogleLogIn = () => {
+        googleLogin(googleProvider)
+            .then(result => {
+                const user = result.user
+                console.log(user);
+                toast("User logged in by Google successfully.")
+            })
+            .catch(error => {
+                console.log("Error", error.message);
+                toast(error.message)
+            })
+    }
+
+    const handleGithubLogin = () => {
+        githubLogin(githubProvider)
+            .then(result => {
+                const user = result.user
+                console.log(user);
+                toast("User logged in by Github successfully.")
+            })
+            .catch(error => {
+                console.log("Error", error.message);
+                toast(error.message)
+            })
+    }
+
 
     return (
         <div>
@@ -72,20 +107,20 @@ const Login = () => {
                     </div>
 
                     <div className="flex justify-between flex-col md:flex-row md:gap-2">
-                        <a href="#" className="flex items-center justify-center mt-2 transform border rounded-lg dark:border-gray-700">
+                        <button onClick={handleGoogleLogIn} className="flex items-center justify-center mt-2 transform border rounded-lg dark:border-gray-700">
                             <div className="px-4 py-2">
                                 <FcGoogle className="w-6 h-6"></FcGoogle>
                             </div>
 
                             <span className="w-5/6 px-4 py-3 font-bold text-center text-rose-600">Sign in with Google</span>
-                        </a>
-                        <a href="#" className="flex items-center justify-center mt-2 transform border rounded-lg dark:border-gray-700">
+                        </button>
+                        <button onClick={handleGithubLogin} className="flex items-center justify-center mt-2 transform border rounded-lg dark:border-gray-700">
                             <div className="px-4 py-2">
                                 <FaGithub className="w-6 h-6"></FaGithub>
                             </div>
 
                             <span className="w-5/6 px-4 py-3 font-bold text-center text-rose-600 ">Sign in with Github</span>
-                        </a>
+                        </button>
                     </div>
 
                     <div className="text-center mt-4">

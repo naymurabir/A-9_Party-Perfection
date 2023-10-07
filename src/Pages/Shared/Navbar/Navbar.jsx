@@ -1,7 +1,25 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                toast("Logout Successful")
+            })
+            .catch(error => {
+                console.log();
+                toast(error.message)
+            })
+    }
+
 
     const navLinks = <>
         <NavLink className="text-lg mr-3 text-gray-800" to="/">HOME</NavLink>
@@ -27,13 +45,39 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
+
             <div className="navbar-end">
-                <Link to="/login">
-                    <button className="bg-[#CE1446] text-white font-semibold px-4 py-2 rounded hover:bg-rose-400">Login</button>
-                </Link>
+                <div className="flex items-center gap-2">
+                    <label >
+                        <div className="w-10 rounded-full">
+                            <img src="" />
+                        </div>
+                    </label>
+
+                    {
+                        user ? <div className="flex gap-4">
+                            <div className="flex items-center gap-2"> <h2 className="text-sm font-semibold">{user.displayName}</h2> <img className="w-12 rounded-full" src={user.photoURL} alt="" /> </div>
+
+                            <button onClick={handleLogOut} className="bg-[#CE1446] text-white font-semibold px-4 py-2 rounded hover:bg-rose-400">Log Out</button>
+                        </div>
+                            :
+                            <Link to="/login">
+                                <button className="bg-[#CE1446] text-white font-semibold px-4 py-2 rounded hover:bg-rose-400">Login</button>
+                            </Link>
+
+                    }
+
+                </div>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );
 };
 
 export default Navbar;
+
+{/* <div className="navbar-end">
+                <Link to="/login">
+                    <button className="bg-[#CE1446] text-white font-semibold px-4 py-2 rounded hover:bg-rose-400">Login</button>
+                </Link>
+            </div> */}

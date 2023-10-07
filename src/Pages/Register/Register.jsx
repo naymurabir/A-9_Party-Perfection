@@ -17,8 +17,7 @@ const Register = () => {
         const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
-        // const termsAccepted = form.get('termsAccepted');
-        const termsAccepted = e.target.terms.checked
+        const termsAccepted = form.get('terms');
         console.log(name, photo, email, password, termsAccepted);
 
         if (password.length < 6) {
