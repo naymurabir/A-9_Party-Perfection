@@ -21,7 +21,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 20 October 2019
+                                On: 02 October 2023
                             </span>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 20 October 2019
+                                On: 03 October 2023
                             </span>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 25 November 2020
+                                On: 04 October 2023
                             </span>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 30 September 2020
+                                On: 30 September 2023
                             </span>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 13 October 2019
+                                On: 13 December 2022
                             </span>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Blog = () => {
                             </h2>
 
                             <span className="text-sm text-gray-500 dark:text-gray-300">
-                                On: 20 October 2019
+                                On: 20 November 2023
                             </span>
                         </div>
                     </div>
