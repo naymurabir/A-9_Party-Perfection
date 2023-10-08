@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -43,6 +44,19 @@ const Register = () => {
                 const user = result.user
                 console.log(user);
                 toast("User has been registered successfully.")
+
+                // Update user profile
+                updateProfile(user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+                    .then(() => {
+                        toast("Profile updated")
+                    })
+                    .catch(error => {
+                        toast(error.message)
+                    })
+
                 e.target.reset()
             })
             .catch(error => {
