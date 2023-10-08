@@ -7,7 +7,7 @@ const FAQ_Page = () => {
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800" >Frequently Ask Your Questions.</h1>
             </div>
 
-            <div className="bg-white dark:bg-gray-700 rounded-md px-4 py-5 md:px-4 md:py-5 lg:px-5 lg:py-5 text-black">
+            <div className="bg-white dark:bg-gray-800 rounded-md px-4 py-5 md:px-4 md:py-5 lg:px-5 lg:py-5 text-black">
                 <div className="collapse collapse-plus mb-3 bg-base-200">
                     <input type="radio" name="my-accordion-3" checked="checked" />
                     <div className="collapse-title text-xl font-medium">

@@ -25,6 +25,8 @@ const Navbar = () => {
     const navLinks = <>
         <NavLink className="text-lg mr-3 text-gray-800" to="/">HOME</NavLink>
 
+        <NavLink className="text-lg mr-3 text-gray-800" to="/about">ABOUT</NavLink>
+
         <NavLink className="text-lg mr-3 text-gray-800" to="/blog">BLOG</NavLink>
 
         <NavLink className="text-lg text-gray-800" to="/contact">CONTACT</NavLink>

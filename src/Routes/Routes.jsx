@@ -8,6 +8,7 @@ import PrivateRoutes from "../Pages/PrivateRoutes/PrivateRoutes";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import Blog from "../Pages/Blog/Blog";
+import About from "../Pages/About/About";
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
                 path: '/',
                 loader: () => fetch('/services.json'),
                 element: <Home></Home>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             },
             {
                 path: '/contact',
