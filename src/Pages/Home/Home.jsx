@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import ServicesHome from "./ServicesHome";
+import Team from "../Team/Team";
 
 
 const Home = () => {
@@ -21,6 +22,8 @@ const Home = () => {
                     services.map(service => <ServicesHome key={service.id} service={service}></ServicesHome>)
                 }
             </div>
+
+            <Team> </Team>
 
         </div>
     );

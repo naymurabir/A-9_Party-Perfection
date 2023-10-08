@@ -1,11 +1,10 @@
 import { FcSms, FcHome, FcPhone } from 'react-icons/fc';
 
 
-
 const Contact = () => {
     return (
         <div>
-            <div className="bg-white dark:bg-gray-900">
+            <div className="bg-white dark:bg-gray-900 mt-4 md:mt-5 lg:mt-10">
                 <div className="container px-6 py-5 mx-auto">
                     <div className="text-center">
                         <h1 className="mt-2  font-semibold text-gray-800 md:text-2xl dark:text-white">We would love to hear from you</h1>
