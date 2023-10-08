@@ -30,7 +30,7 @@ const Register = () => {
             return;
         }
         else if (!/[@#$%^&+=!]/.test(password)) {
-            toast("Password must have a special character.");
+            toast("Password must have a special character. [hints: @#$%^&+=!]");
             return;
         }
         else if (!termsAccepted) {

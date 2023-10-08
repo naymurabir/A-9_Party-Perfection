@@ -56,7 +56,7 @@ const Navbar = () => {
 
                     {
                         user ? <div className="flex gap-2">
-                            <div className="flex items-center gap-2"> <h2 className="text-sm font-semibold">{user.displayName}</h2> <img className="w-10 rounded-full" src={user.photoURL} alt="" /> </div>
+                            <div className="flex items-center gap-2"> <h2 className="text-sm font-semibold hidden md:block">{user.displayName}</h2> <img className="w-10 rounded-full" src={user.photoURL} alt="" /> </div>
 
                             <button onClick={handleLogOut} className="bg-[#CE1446] text-white font-semibold px-4 py-2 rounded hover:bg-rose-400">Log Out</button>
                         </div>
