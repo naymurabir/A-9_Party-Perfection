@@ -9,12 +9,14 @@
    B: ReferenceError: greetign is not defined
    <br/>
    C: undefined
-Answer : A ;
+
+Answer : A <br/>
 Explanation :
-The initial value of greeting is declared as an empty { }. Then when we make console log to the greeting then we get the output as an empty { }.
+"We start with an empty object assigned to 'greeting', and when we log 'greeting', we see an empty object as the output."
 ---
+
 2. Write the correct answer from the following options and give an explanation (2-5 lines).
-   <br/>
+<br/>
    `function sum(a, b) {
    return a + b;
    }
@@ -26,10 +28,10 @@ The initial value of greeting is declared as an empty { }. Then when we make con
    <br/>
    C: "12"
    <br/>
-   D: 3
-Answer : C ;
-Explanation :
-At first we declared a sum function where passed a number and a string. After passing into the function, the function returning the calculation of sum of a + b. Because a number and a string can not be added. So the function is converting the result into string as output
+   D: 3 
+   
+Answer : C <br/>
+Explanation : We have a 'sum' function that takes a number and a string as arguments. Inside the function, it calculates the sum of the number and the string, and because we can't directly add a number and a string, the function converts the result into a string before returning it as the output.
 ---
 <br>
 3. Write the correct answer from the following options and give an explanation (2-5 lines).
@@ -49,10 +51,9 @@ B: ['🍝', '🍫', '🥑', '🍔']
 C: ['🍝', '🍕', '🍫', '🥑', '🍔']
 <br>
 D: ReferenceError
-Answer : A ;
-Explanation :
-At first we are initializing an array of food. Then we are initializing an object with a property favoriteFood. Then setting the set to the first index of the food array. Then changing the value of info.favoriteFood. After this if we make console log the food array. It will not be changed the items of food array. Because we are modifying the info object, not the food array. 
 
+Answer : A <br/>
+Explanation : We start by creating an array called 'food' and an object with a 'favoriteFood' property. We set the object's 'favoriteFood' property to the first item in the 'food' array. Later, when we change the value of 'info.favoriteFood', it doesn't affect the 'food' array. We're modifying the 'info' object, not the 'food' array, so the array remains unchanged when we log it.
 --- 
 
 4. Write the correct answer from the following options and give an explanation (2-5 lines).
@@ -70,10 +71,8 @@ console.log(sayHi());`
    <br>
    D: ReferenceError
 
-Answer : B ;
-Explanation :
-In the code, the sayHi function expects a 'name' parameter. but when we call sayHi() without providing any argument, the 'name' variable inside the function doesn't have a value assigned to it. So, when we call sayHi() without an argument, the function returns "Hi there, undefined"
-
+Answer : B <br/>
+Explanation : Here we are calling the sayHi() without providing any argument, and also the 'name' variable inside the function doesn't have a value assigned to it. So, when we call sayHi() without an argument, the function returns "Hi there, undefined"
 ---
 
 5. Write the correct answer from the following options and give an explanation (2-5 lines).
@@ -94,8 +93,6 @@ C: 3
 <br>
 D: 4
 
-Answer : C ;
-Explanation :
-In this code, a variable count is initialized to 0, and there is an array nums containing the values [0, 1, 2, 3]. The forEach array method is used to iterate over each items of the array. Inside the callback function, it checks whether the num is there or not as a value.which is truthy For values 1, 2, and 3, the condition is true, and count is incremented by 1 each time. Therefore, after through all items in the array index, the latest items in index result value 3
-
+Answer : C <br/>
+Explanation : In this code, there's an array nums containing the values [0, 1, 2, 3]. The forEach method is used to iterate through each item in the array. Inside the callback function, it checks if the current item num is truthy. When num is truthy, the condition is true, and a count is incremented by 1. After iterating through all the items in the array, the count variable holds the number of truthy values, which is 3 in this case.
 ---
