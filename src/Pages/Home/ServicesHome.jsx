@@ -1,7 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-AOS.init();
-
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +14,9 @@ const ServicesHome = ({ service }) => {
 
     return (
 
-        <div className="card card-compact shadow-xl p-2 bg-[#EBF6E2]">
+        <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" className="card card-compact shadow-xl p-2 bg-[#EBF6E2]">
             <img className='w-full h-[200px] object-cover rounded-md ' src={thumbnail} alt="Event" />
             <div className="card-body ">
                 <h2 className='text-xl font-bold text-gray-800'>{title}</h2>
