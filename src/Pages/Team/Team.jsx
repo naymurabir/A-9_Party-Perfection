@@ -1,10 +1,15 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Team = () => {
     return (
 
         <div className="text-center my-5 md:my-5 lg:my-16">
-            <h2 className="text-xl font-bold text-[#CE1446]">Team</h2>
-            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800 mb-5" >Our Executive Team</h1>
+            <div data-aos="flip-left">
+                <h2 className="text-xl font-bold text-[#CE1446]">Team</h2>
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800 mb-5" >Our Executive Team</h1>
+            </div>
 
             <div className="bg-white dark:bg-[#713F57] rounded-md">
                 <div className="container px-6 py-8 mx-auto">
@@ -127,7 +132,7 @@ const Team = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

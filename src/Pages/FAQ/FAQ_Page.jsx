@@ -1,10 +1,16 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 const FAQ_Page = () => {
     return (
         <div>
             <div className="text-center my-5 md:my-5 lg:my-10">
-                <h2 className="text-xl font-bold text-[#CE1446]">Questions</h2>
-                <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800" >Frequently Ask Your Questions.</h1>
+                <div data-aos="flip-left">
+                    <h2 className="text-xl font-bold text-[#CE1446]">Questions</h2>
+                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800" >Frequently Ask Your Questions.</h1>
+                </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-md px-4 py-5 md:px-4 md:py-5 lg:px-5 lg:py-5 text-black">

@@ -1,3 +1,7 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+AOS.init();
+
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,6 +28,7 @@ const ServicesHome = ({ service }) => {
                 <button onClick={handleServiceDetails} className='text-white font-semibold bg-[#CE1446] px-4 py-2 rounded hover:bg-rose-400'>Book Now</button>
             </div>
         </div>
+
     );
 };
 
