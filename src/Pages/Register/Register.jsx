@@ -53,7 +53,7 @@ const Register = () => {
                     photoURL: photo
                 })
                     .then(() => {
-                        toast("Profile updated")
+                        console.log("Profile updated.");
                         navigate('/login')
                         logOut()
                     })
@@ -67,7 +67,6 @@ const Register = () => {
                 console.log("Error", error.message);
                 toast(error.message)
             })
-
 
     }
 
