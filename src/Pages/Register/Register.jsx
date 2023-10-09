@@ -81,7 +81,8 @@ const Register = () => {
                             type="text"
                             name="name"
                             placeholder="Input your name..."
-                            className="input input-bordered" />
+                            className="input input-bordered"
+                            required />
                     </div>
 
                     <div className="form-control">
@@ -92,7 +93,8 @@ const Register = () => {
                             type="text"
                             name="photo"
                             placeholder="Input your photo url..."
-                            className="input input-bordered" />
+                            className="input input-bordered"
+                            required />
                     </div>
 
                     <div className="form-control">
