@@ -1,5 +1,4 @@
-# Website Name :
-# Event LAB
+# Website Name : Event LAB
 
 # Live Link: 
 # https://react-event-lab.web.app
